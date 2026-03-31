@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COMENSAL — Nutrición, Oficio y Memoria</title>
+<meta name="description" content="Plataforma de resistencia cultural. Transformamos consumidores pasivos en ciudadanos críticos. Soberanía alimentaria, talleres para escuelas, etiquetado frontal Argentina, Ley 27.642.">
+<meta name="keywords" content="Soberanía alimentaria, Etiquetado Frontal Argentina, Comensalidad crítica, Taller de nutrición para escuelas, Ley 27.642">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700;1,900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/comensal.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">COMENSAL<sup>®</sup></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Manifiesto</a></li>
+    <li><a href="#educativa">Educativa</a></li>
+    <li><a href="#oficio">Oficio</a></li>
+    <li><a href="#recetas">Memoria</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contacto">Sumarse</a></li>
+  </ul>
+  <div class="nav-burger" id="navBurger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg-text">COMENSAL</div>
+  <div class="hero-main">
+    <div class="hero-col">
+      <p class="stamp">Plataforma de resistencia cultural</p>
+      <h1 class="hero-h1">COME<em>NSAL</em></h1>
+      <p class="hero-slogan">Nutrición · Oficio · Memoria</p>
+      <p class="hero-manifiesto">La mesa no es solo donde se come. Es donde se negocia la cultura, se transmite la memoria y se ejerce —o se cede— la soberanía. <strong>Transformamos consumidores pasivos en ciudadanos críticos.</strong></p>
+      <div class="hero-ctas">
+        <a href="#educativa" class="btn btn-fill">Ver talleres</a>
+        <a href="#manifiesto" class="btn btn-outline">Leer manifiesto</a>
+      </div>
+    </div>
+    <div class="hero-divider-v"></div>
+    <div class="hero-col hero-col-right">
+      <div class="contrast-block">
+        <div class="contrast-top">
+          <span class="contrast-label label-huerfana">Comida huérfana</span>
+          <p class="contrast-text text-huerfana">Sin historia.<br>Sin raíz.<br>Sin cuerpo.</p>
+          <p class="contrast-sub sub-huerfana">Diseñada por ingenieros del deseo,<br>vendida con imágenes de salud y familia.</p>
+        </div>
+        <div class="contrast-sep"></div>
+        <div class="contrast-bottom">
+          <span class="contrast-label label-historia">Comida con historia</span>
+          <p class="contrast-text text-historia">La mesa familiar.<br>El origen.<br>El oficio.</p>
+          <p class="contrast-sub sub-historia">Un acto político. Un vínculo social.<br>La nutrición como resistencia.</p>
+          <div class="badge-spin">
+            <svg viewBox="0 0 100 100">
+              <defs><path id="circle" d="M 50,50 m -30,0 a 30,30 0 1,1 60,0 a 30,30 0 1,1 -60,0"/></defs>
+              <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(200,51,10,0.3)" stroke-width="1"/>
+              <circle cx="50" cy="50" r="6" fill="#C8330A"/>
+              <text font-size="8.5" font-family="IBM Plex Mono, monospace" fill="#C8330A" letter-spacing="2">
+                <textPath href="#circle">TRES MUNDOS · UNA MESA · SOBERANÍA ·</textPath>
+              </text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Soberanía Alimentaria</span><span class="dot"></span><span>Ley 27.642</span><span class="dot"></span><span>Clasificación NOVA</span><span class="dot"></span><span>Etiquetado Frontal</span><span class="dot"></span><span>La Mesa como Acto Político</span><span class="dot"></span><span>Comensalidad Crítica</span><span class="dot"></span><span>GAPA · OPS · OMS</span><span class="dot"></span><span>Soberanía Alimentaria</span><span class="dot"></span><span>Ley 27.642</span><span class="dot"></span><span>Clasificación NOVA</span><span class="dot"></span><span>Etiquetado Frontal</span><span class="dot"></span><span>La Mesa como Acto Político</span><span class="dot"></span><span>Comensalidad Crítica</span><span class="dot"></span><span>GAPA · OPS · OMS</span><span class="dot"></span>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATIVA -->
+<section id="educativa">
+  <div class="edu-header">
+    <div class="sr">
+      <p class="sec-label">Área educativa</p>
+      <h2 class="sec-title">COMENSALES<br>DEL <em>FUTURO</em></h2>
+      <p class="sec-body">Una intervención pedagógica para instituciones educativas. No es una charla: es una experiencia que sacude, cuestiona y construye ciudadanía alimentaria.</p>
+    </div>
+    <div class="edu-header-right sr sr-d2">
+      <div class="edu-pill">⏱ 80 minutos</div>
+      <div class="edu-pill">Para adolescentes</div>
+      <div class="edu-pill">Todo el país</div>
+      <p>Usamos el humor, el análisis del marketing digital y la historia para transformar la mirada de los estudiantes sobre lo que comen, cómo lo eligen y por qué.</p>
+      <a href="#contacto" class="btn btn-dark">Solicitar taller</a>
+    </div>
+  </div>
+  <div class="ejes-grid">
+    <div class="eje sr">
+      <div class="eje-num">01</div>
+      <h3 class="eje-title">El Stand-up<br>del Nutri</h3>
+      <p class="eje-body">El humor como herramienta pedagógica para romper la asimetría entre el saber experto y la experiencia cotidiana. Porque si reímos, bajamos la guardia —y aprendemos de verdad.</p>
+      <span class="eje-arrow">→</span>
+    </div>
+    <div class="eje sr sr-d1">
+      <div class="eje-num">02</div>
+      <h3 class="eje-title">Scanner<br>de Humo</h3>
+      <p class="eje-body">Análisis crítico de la publicidad alimentaria y la "Matrix alimentaria" en redes sociales. Aprendemos a leer entre líneas lo que nos quieren hacer comer —y por qué les conviene.</p>
+      <span class="eje-arrow">→</span>
+    </div>
+    <div class="eje sr sr-d2">
+      <div class="eje-num">03</div>
+      <h3 class="eje-title">Banquete<br>Político</h3>
+      <p class="eje-body">La comida como acto de resistencia cultural. Cada elección en la mesa es una declaración. Exploramos la historia detrás del plato y la soberanía como ejercicio cotidiano.</p>
+      <span class="eje-arrow">→</span>
+    </div>
+  </div>
+  <div class="servicios-row">
+    <div class="servicio sr">
+      <div class="servicio-icon">🎤</div>
+      <div class="servicio-name">Charlas Institucionales</div>
+      <div class="servicio-desc">Para escuelas, cooperativas, organizaciones sociales. Adaptadas al contexto y al público.</div>
+    </div>
+    <div class="servicio sr sr-d1">
+      <div class="servicio-icon">🌾</div>
+      <div class="servicio-name">Talleres de Soberanía</div>
+      <div class="servicio-desc">Un recorrido práctico por la cadena alimentaria: quién produce, quién distribuye, quién gana.</div>
+    </div>
+    <div class="servicio sr sr-d2">
+      <div class="servicio-icon">🔍</div>
+      <div class="servicio-name">Laboratorio de Etiquetas</div>
+      <div class="servicio-desc">Decodificamos el etiquetado frontal en vivo. Ley 27.642, clasificación NOVA y sellos al descubierto.</div>
+    </div>
+  </div>
+  <div class="edu-cta-row sr">
+    <p>¿Tu institución quiere hacer algo <em>distinto</em> con la alimentación?</p>
+    <a href="#contacto" class="btn btn-fill">Escribinos ahora</a>
+  </div>
+</section>
+
+<!-- OFICIO -->
+<section id="oficio">
+  <div class="oficio-header">
+    <div class="sr">
+      <p class="sec-label" style="color:var(--ocre)"><span style="width:24px;height:1.5px;background:var(--ocre);display:block;"></span>Oficio &amp; Indumentaria</p>
+      <h2 class="sec-title on-dark">UNIFORMES PARA<br><em>CIUDADANOS</em><br>CRÍTICOS</h2>
+    </div>
+    <div class="sr sr-d2" style="align-self:end;">
+      <p class="sec-body on-dark">No son solo prendas. Son disparadores de conversación. Cada pieza carga con contexto histórico sobre la soberanía alimentaria argentina.</p><br>
+      <a href="#contacto" class="btn btn-fill" style="margin-top:.5rem;">Ver colección completa</a>
+    </div>
+  </div>
+
+  <div class="productos-grid">
+    <div class="producto sr">
+      <div class="producto-visual-img">
+        <img src="assets/img/remera-mate.png" alt="Remera Lo individual no sacia — mate ilustrado">
+        <div class="producto-overlay">
+          <span class="producto-tag">Cápsula 01 — Edición Limitada</span>
+          <h3 class="producto-name">"Lo individual<br>no sacia."</h3>
+        </div>
+      </div>
+      <div class="producto-caption">
+        <p>Ilustración botánica del mate como símbolo de la comensalidad colectiva. Algodón orgánico crema. <em>Porque compartir la ronda es un acto político.</em></p>
+        <div class="producto-meta">
+          <span class="producto-precio">Consultar precio</span>
+          <a href="#contacto" class="btn btn-tomate-outline" style="padding:.5rem 1.2rem;font-size:.6rem;">Pedir</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="producto sr sr-d1">
+      <div class="producto-visual-img">
+        <img src="assets/img/remera-locro.png" alt="Remera La partia es una construcción a fuego lento">
+        <div class="producto-overlay">
+          <span class="producto-tag">Cápsula 02 — Oficio Colectivo</span>
+          <h3 class="producto-name">"La partia<br>a fuego lento."</h3>
+        </div>
+      </div>
+      <div class="producto-caption">
+        <p>Grabado de manos sosteniendo la olla común. La pinta de la resistencia gastronómica. <em>La comunidad se construye lentamente, como la cocina.</em></p>
+        <div class="producto-meta">
+          <span class="producto-precio">Consultar precio</span>
+          <a href="#contacto" class="btn btn-tomate-outline" style="padding:.5rem 1.2rem;font-size:.6rem;">Pedir</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="producto sr sr-d2">
+      <div class="producto-visual-img">
+        <img src="assets/img/remera-tomate.png" alt="Remera Nadie es de donde nace sino de donde lo cocinan">
+        <div class="producto-overlay">
+          <span class="producto-tag">Cápsula 03 — Identidad &amp; Territorio</span>
+          <h3 class="producto-name">"Nadie es<br>de donde nace."</h3>
+        </div>
+      </div>
+      <div class="producto-caption">
+        <p>Tomate anatómico sobre mapa cartográfico. La identidad se forja en la cocina, no en el documento. <em>Nadie es de donde nace, sino de donde lo cocinan.</em></p>
+        <div class="producto-meta">
+          <span class="producto-precio">Consultar precio</span>
+          <a href="#contacto" class="btn btn-tomate-outline" style="padding:.5rem 1.2rem;font-size:.6rem;">Pedir</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="oficio-manifiesto sr">
+    <div class="oficio-quote">Vestir es político</div>
+    <div>
+      <p class="oficio-body">Cada prenda de COMENSAL tiene impresa —en la tela o en el espíritu— una pregunta sobre qué comemos, quién lo produce y para qué mercado. Las cápsulas se lanzan en ediciones limitadas, vinculadas a momentos del calendario alimentario y cultural argentino.</p>
+      <p class="oficio-body" style="margin-top:1rem;"><strong>No fabricamos merch. Fabricamos conversaciones.</strong></p>
+      <p class="oficio-next-capsule">Próxima cápsula: Mayo · Mes de la Soberanía</p>
+    </div>
+  </div>
+</section>
+
+<!-- RECETAS -->
+<section id="recetas">
+  <div class="recetas-header">
+    <div class="sr">
+      <p class="sec-label">Banco de Recetas &amp; Blog</p>
+      <h2 class="sec-title">LA <em>MEMORIA</em><br>EN EL PLATO</h2>
+    </div>
+    <div class="sr sr-d2">
+      <p class="sec-body">Un espacio de colaboración entre la Nutrición y la Historia. Recetas que son documentos. Sabores que son archivos. Lo que casi se pierde, acá se rescata.</p>
+    </div>
+  </div>
+
+  <!-- Featured + lista lateral -->
+  <div class="recetas-body-grid">
+    <div class="receta-featured sr">
+      <div class="receta-featured-visual" style="font-size:6rem;">✍️</div>
+      <div class="receta-featured-content">
+        <p class="sec-label">Artículo destacado · El Blog de COMENSAL</p>
+        <h3>La receta que<br>no se escribe</h3>
+        <p>Hoy cociné, como todos los días, la receta que heredé. Esa que me da de comer a mí y a mi familia. Nadie nunca la escribió; se fue transmitiendo y hace años llegó a mis manos...</p>
+        <a href="#" class="btn btn-dark" onclick="abrirArticulo('receta'); return false;">Leer artículo completo</a>
+      </div>
+      <div class="colabora-cta">
+        <p>¿Tenés una receta con <span>historia</span>? El banco es colaborativo.</p>
+        <a href="#contacto" class="btn btn-outline" style="white-space:nowrap;">Colaborar</a>
+      </div>
+    </div>
+
+    <div class="recetas-lista">
+      <div class="receta-item sr" onclick="abrirArticulo('puchero')" style="cursor:none;">
+        <div class="receta-n">01</div>
+        <div class="receta-info">
+          <span class="tag">Historia + Nutrición</span>
+          <h4>El puchero de los próceres</h4>
+          <p>Poder, guerra y calorías en el siglo XIX. ¿Qué comía el Ejército de los Andes?</p>
+        </div>
+      </div>
+      <div class="receta-item sr sr-d1" onclick="abrirArticulo('mazamorra')" style="cursor:none;">
+        <div class="receta-n">02</div>
+        <div class="receta-info">
+          <span class="tag">Historia Social de la Cocina</span>
+          <h4>La Mazamorra y el Mestizaje Alimentario</h4>
+          <p>Cómo un alimento colonial se convirtió en símbolo de identidad popular.</p>
+        </div>
+      </div>
+      <div class="receta-item sr sr-d2" onclick="abrirArticulo('locro')" style="cursor:none;">
+        <div class="receta-n">03</div>
+        <div class="receta-info">
+          <span class="tag">Clasificación NOVA · Plato Político</span>
+          <h4>El Locro del 25 de Mayo</h4>
+          <p>Un plato que une y divide. El significado colectivo de la olla común.</p>
+        </div>
+      </div>
+      <div class="receta-item sr sr-d3" onclick="abrirArticulo('mate')" style="cursor:none;">
+        <div class="receta-n">04</div>
+        <div class="receta-info">
+          <span class="tag">Nutrición Crítica</span>
+          <h4>El Mate: Cultura, Cafeína y Resistencia</h4>
+          <p>Más que una infusión: un ritual que desafía la lógica del consumo individual.</p>
+        </div>
+      </div>
+      <div class="receta-item sr sr-d4" onclick="abrirArticulo('milanesa')" style="cursor:none;">
+        <div class="receta-n">05</div>
+        <div class="receta-info">
+          <span class="tag">Evolución de la Cocina Argentina</span>
+          <h4>La Milanesa: Inmigración y Clase Obrera</h4>
+          <p>Por qué el corte más humilde se convirtió en el plato más democrático.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Blog cards ampliadas -->
+  <div class="blog-cards">
+    <div class="blog-card sr" onclick="abrirArticulo('receta')">
+      <div class="bc-num">—</div>
+      <span class="bc-tag">Reflexión · Memoria culinaria</span>
+      <p class="bc-title">La receta que no se escribe</p>
+      <p class="bc-excerpt">La transmisión oral de la cocina como resistencia cultural. Lo que los libros de recetas no pueden capturar.</p>
+      <span class="bc-leer">Leer →</span>
+    </div>
+    <div class="blog-card sr sr-d1" onclick="abrirArticulo('puchero')">
+      <div class="bc-num">01</div>
+      <span class="bc-tag">Historia + Nutrición</span>
+      <p class="bc-title">El puchero de los próceres</p>
+      <p class="bc-excerpt">Soberanía alimentaria en el siglo XIX. Lo que comían quienes construyeron la nación.</p>
+      <span class="bc-leer">Leer →</span>
+    </div>
+    <div class="blog-card sr sr-d2" onclick="abrirArticulo('mate')">
+      <div class="bc-num">02</div>
+      <span class="bc-tag">Nutrición Crítica</span>
+      <p class="bc-title">El mate y el consumo individual</p>
+      <p class="bc-excerpt">Un análisis de por qué el mate en solitario con auriculares es el síntoma de algo más profundo.</p>
+      <span class="bc-leer">Leer →</span>
+    </div>
+  </div>
+
+</section>
+
+<!-- ══ MODAL ARTÍCULOS ══ -->
+<div id="modal-articulo" style="display:none;" role="dialog" aria-modal="true">
+  <div class="modal-art">
+    <div class="modal-overlay" onclick="cerrarArticulo()"></div>
+    <article class="modal-content">
+      <button class="modal-close" onclick="cerrarArticulo()" aria-label="Cerrar">✕</button>
+      <div id="modal-body"></div>
+    </article>
+  </div>
+</div>
+
+
+<!-- BLOG ARTICULO -->
+<section id="blog">
+  <div class="blog-header">
+    <div class="sr">
+      <p class="sec-label">Blog · La Memoria</p>
+      <h2 class="sec-title">ARTÍCULOS<br><em>CON HISTORIA</em></h2>
+    </div>
+    <div class="sr sr-d2">
+      <p class="sec-body">Escritura colaborativa entre nutrición e historia. Textos que no informan: interpelan.</p>
+    </div>
+  </div>
+
+  <!-- ARTÍCULO DESTACADO -->
+  <article class="blog-article-full sr">
+    <div class="blog-article-header">
+      <div class="blog-article-meta">
+        <span class="blog-cat">Comensalidad · Cultura</span>
+        <span class="blog-date">2025</span>
+      </div>
+      <h2 class="blog-article-title">Contra la tiranía del "instante":<br><em>rescatar la mesa argentina</em></h2>
+      <p class="blog-article-lead">En estos tiempos de redes sociales y de instantes, donde todo es "ya" y nada merece el tiempo necesario, propongo que nos tomemos una pausa y le demos tiempo a lo verdaderamente importante.</p>
+    </div>
+
+    <div class="blog-article-body">
+      <div class="blog-text-col">
+
+        <p>En estos tiempos de redes sociales y de instantes, donde todo es "ya" y nada merece el tiempo necesario, el silencio y la pausa se perciben como una pérdida de tiempo. La información circula en videos o audios cortos, muchas veces planificados para confundir o para instalar la idea de que esa rapidez es la única verdad.</p>
+
+        <p>Propongo que nos tomemos una pausa y le demos tiempo a lo verdaderamente importante. Nuestra generación consume una infinidad de influencers que "cocinan" o inventan recetas en minutos; recetas que esta generación no hará. O, lo que es más preocupante: este contenido llegará a miles de jóvenes con un conflicto con su cuerpo que no encaja en los modelos actuales de belleza. Esto provoca que terminen por no disfrutar la comensalidad, cayendo en los —cada vez más presentes— TCA (Trastornos de la Conducta Alimentaria).</p>
+
+        <blockquote class="blog-quote">
+          "No ha de haber herencia más valiosa que un cuaderno, libreta o papelito escrito a mano con alguna receta."
+        </blockquote>
+
+        <p>Por eso, reivindico toda la historia que nos construye como comensales. Desde el inicio de nuestra vida, ese hermoso vínculo madre-hijo nos alimenta con nutrientes y con el amor necesario para aprender a vivir. Es fundamental mencionar a esas personas que nos nutren durante la infancia —en el caso de que la infancia sea como debe ser: un espacio para jugar y aprender—.</p>
+
+        <p>Podríamos mencionar a madres y abuelas. Y si es una cuestión de género, es porque eran ellas, las mujeres, las encargadas de la preparación de la comida para toda la familia. A mí me gusta reconocerlas como las <strong>"nutricionistas de antaño"</strong>. Por su rol, sus saberes y su incansable labor. Dicha tarea no se estudiaba: se aprendía compartiendo tiempo, mirando las manos y reconociendo los utensilios que se convertirían en aliados al momento de cocinar.</p>
+
+      </div>
+
+      <div class="blog-sidebar-col">
+        <div class="blog-sidebar-card">
+          <p class="blog-sidebar-label">Un banco de recetas</p>
+          <p>Me gustaría que este espacio actúe como un banco de recetas; de esas que están ancladas a tus sentimientos más profundos, que te transportan a diferentes lugares o que, simplemente, te alegran.</p>
+          <p style="margin-top:1rem;">Recetas que te hacen sentir que vas a comer rico, tal como sucedía cuando el plato ya estaba listo sobre la mesa en la que te ibas a sentar.</p>
+        </div>
+
+        <div class="blog-sidebar-preguntas">
+          <p class="blog-sidebar-label">Las preguntas que importan</p>
+          <ul>
+            <li>¿Qué pasará con las recetas de nuestros ancestros cuando nadie las haga?</li>
+            <li>¿Quedarán en nuestro recuerdo hasta que partamos?</li>
+            <li>¿O vamos a tomar ese pedazo de historia para que nuestros hijos la vivan por siempre?</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-article-footer">
+      <div class="blog-conclusion">
+        <p>Necesitamos resignificar los rituales, los encuentros y las comidas en familia o entre amigos. Porque siempre habrá un lugar para quien quiera habitar la mesa argentina.</p>
+      </div>
+      <div class="blog-cta-box">
+        <p class="blog-cta-label">¿Tenés una receta con historia?</p>
+        <p>Compartila con nosotros. El banco de recetas de COMENSAL es un espacio colaborativo y vivo.</p>
+        <a href="#contacto" class="btn btn-fill" style="margin-top:1rem;display:inline-block;">Compartir mi receta</a>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- MANIFIESTO -->
+<section id="manifiesto">
+  <div class="manifiesto-bg">MESA</div>
+  <div class="manifiesto-inner">
+    <p class="sec-label sr">El manifiesto</p>
+    <h2 class="manifiesto-h sr sr-d1">LA MESA<br>COMO ACTO<br><em>POLÍTICO</em></h2>
+    <p class="manifiesto-p sr sr-d2">Vivimos en una era de abundancia simulada. Las góndolas están llenas de productos que no nutren, diseñados por ingenieros del deseo, vendidos con imágenes de salud y familia. La industria no nos alimenta: nos administra el apetito.</p>
+    <blockquote class="manifiesto-cita sr sr-d3">"No hay acto más íntimo y más político que elegir qué ponemos en el cuerpo. Y sin embargo, esa elección nos la hicieron creer libre."</blockquote>
+    <p class="manifiesto-p sr sr-d4">COMENSAL nace de la síntesis entre la Nutrición Clínica, el Oficio Gastronómico y la Memoria Histórica porque entendemos que el problema alimentario no es médico: es cultural. No se resuelve con más información; se resuelve recuperando el vínculo entre el cuerpo, el territorio y la comunidad.</p>
+    <p class="manifiesto-p sr">La nutrición como vínculo social. El oficio como dignidad. La memoria como brújula. Eso es COMENSAL.</p>
+    <div style="margin-top:3rem;" class="sr"><a href="#contacto" class="btn btn-tomate-outline">Sumarse al proyecto</a></div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="contacto-grid">
+    <div class="contacto-info sr">
+      <p class="sec-label">Contacto</p>
+      <h2 class="sec-title">TRABAJEMOS<br><em>JUNTOS</em></h2>
+      <p class="sec-body">Si sos docente, directivo, coordinador pedagógico o simplemente alguien que quiere hacer algo distinto con la alimentación en tu comunidad: estamos. Respondemos en menos de 48 horas.</p>
+      <div class="contacto-datos">
+        <div class="dato"><div class="dato-icono">✉</div><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e28a8d8e83a2818d8f878c91838ecc8390">[email&#160;protected]</a></div>
+        <div class="dato"><div class="dato-icono">📍</div>Argentina · Todo el país</div>
+        <div class="dato"><div class="dato-icono">📲</div>@comensal.ar</div>
+      </div>
+    </div>
+    <div class="contacto-form-col sr sr-d2">
+      <form onsubmit="enviarForm(event)" novalidate>
+        <div class="f-row">
+          <div class="f-group"><label for="nombre">Nombre</label><input type="text" id="nombre" placeholder="Tu nombre"></div>
+          <div class="f-group"><label for="institucion">Institución</label><input type="text" id="institucion" placeholder="Escuela / organización"></div>
+        </div>
+        <div class="f-group"><label for="email">Correo electrónico</label><input type="email" id="email" placeholder="tu@correo.com"></div>
+        <div class="f-group">
+          <label for="interes">Me interesa</label>
+          <select id="interes">
+            <option value="">Seleccioná una opción</option>
+            <option>Taller Comensales del Futuro</option>
+            <option>Charla institucional</option>
+            <option>Laboratorio de etiquetas</option>
+            <option>Indumentaria / Shop</option>
+            <option>Colaborar en el blog</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="f-group"><label for="mensaje">Mensaje</label><textarea id="mensaje" rows="4" placeholder="Contanos tu contexto y qué necesitás..."></textarea></div>
+        <button type="submit" class="btn btn-fill">Enviar consulta →</button>
+        <p class="form-msg" id="formMsg">✓ Mensaje recibido. Te respondemos pronto.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-main">
+    <div class="f-col">
+      <div class="f-brand">COMENSAL<sup>®</sup></div>
+      <p class="f-desc">Plataforma de resistencia cultural. Nutrición, Oficio y Memoria al servicio de la soberanía alimentaria argentina.</p>
+    </div>
+    <div class="f-col">
+      <h5>Secciones</h5>
+      <ul>
+        <li><a href="#home">Manifiesto</a></li>
+        <li><a href="#educativa">Área Educativa</a></li>
+        <li><a href="#oficio">Oficio &amp; Shop</a></li>
+        <li><a href="#recetas">Banco de Recetas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="f-col">
+      <h5>Servicios</h5>
+      <ul>
+        <li><a href="#educativa">Talleres escolares</a></li>
+        <li><a href="#educativa">Charlas institucionales</a></li>
+        <li><a href="#educativa">Lab. de etiquetas</a></li>
+        <li><a href="#oficio">Cápsulas de indumentaria</a></li>
+      </ul>
+    </div>
+    <div class="f-col">
+      <h5>Temas / SEO</h5>
+      <ul>
+        <li><a href="#manifiesto">Soberanía alimentaria</a></li>
+        <li><a href="#educativa">Etiquetado Frontal</a></li>
+        <li><a href="#recetas">Comensalidad crítica</a></li>
+        <li><a href="#educativa">Taller nutrición escuelas</a></li>
+        <li><a href="#manifiesto">Ley 27.642</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-refs">
+    <h6>Respaldo científico &amp; transparencia</h6>
+    <div class="refs-chips">
+      <span>Guías Alimentarias para la Población Argentina (GAPA)</span>
+      <span>Clasificación NOVA · OPS/OMS</span>
+      <span>Patricia Aguirre — Historia Social de la Comida</span>
+      <span>Claude Fischler — El (h)omnívoro</span>
+      <span>Ley 27.642 — Etiquetado Frontal de Alimentos</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 COMENSAL. Todos los derechos reservados.</span>
+    <span>Nutrición · Oficio · Memoria</span>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+/* Cursor */
+const dot = document.getElementById('cursorDot');
+const ring = document.getElementById('cursorRing');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove', e => {
+  mx=e.clientX; my=e.clientY;
+  dot.style.left=mx+'px'; dot.style.top=my+'px';
+});
+(function animRing(){
+  rx+=(mx-rx)*.12; ry+=(my-ry)*.12;
+  ring.style.left=rx+'px'; ring.style.top=ry+'px';
+  requestAnimationFrame(animRing);
+})();
+document.querySelectorAll('a,button,.eje,.receta-item,.producto').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{ ring.style.width='50px'; ring.style.height='50px'; ring.style.opacity='1'; dot.style.transform='translate(-50%,-50%) scale(1.5)'; });
+  el.addEventListener('mouseleave',()=>{ ring.style.width='32px'; ring.style.height='32px'; ring.style.opacity='0.6'; dot.style.transform='translate(-50%,-50%) scale(1)'; });
+});
+
+/* Nav */
+function toggleNav(){ document.getElementById('navbar').classList.toggle('open'); }
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navbar').classList.remove('open')));
+
+/* Scroll reveal */
+const srEls=document.querySelectorAll('.sr');
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); } });
+},{threshold:.1,rootMargin:'0px 0px -30px 0px'});
+srEls.forEach(el=>obs.observe(el));
+
+/* Form */
+function enviarForm(e){
+  e.preventDefault();
+  const btn=e.target.querySelector('button');
+  btn.textContent='Enviando...'; btn.disabled=true;
+  setTimeout(()=>{ btn.style.display='none'; document.getElementById('formMsg').style.display='block'; },1100);
+}
+
+/* Hero entrance */
+document.querySelectorAll('.hero-h1,.hero-slogan,.hero-manifiesto,.hero-ctas,.stamp').forEach((el,i)=>{
+  el.style.opacity='0'; el.style.transform='translateY(20px)';
+  setTimeout(()=>{ el.style.transition='opacity .8s ease,transform .8s ease'; el.style.opacity='1'; el.style.transform='none'; },180+i*110);
+});
+
+/* ══ ARTÍCULOS ══ */
+const articulos = {
+  receta: {
+    emoji: "✍️",
+    eyebrow: "Blog COMENSAL · Reflexión",
+    title: "La receta que",
+    titleEm: "no se escribe",
+    authors: ["Por: COMENSAL", "Categoría: Memoria culinaria"],
+    body: `<p>Hoy cociné, como todos los días, la receta que heredé. Esa que me da de comer a mí y a mi familia. Nadie nunca la escribió; se fue transmitiendo y hace años llegó a mis manos y, junto a ellas, la hice propia, pero no propiedad privada.</p><p>Eso sí, tendrás que ver cómo la hago, porque aún sigue sin escribirse. Siempre estuvo abierta a tus manos o a todas las manos que intenten hacerla suya.</p><blockquote>Esta receta tiene una historia, que no es esta; esto es un simple resumen para contarte que así se aprende a cocinar.</blockquote><p>"Mirá, así aprendes", decían nuestros adultos, y a veces no lo decían, lo dejaban explícito en el aire.</p><p>Y de esa manera fuimos aprendiendo a ser. También están aquellos que decidieron ser profesionales, chef o cocineros, cuya formación les dio herramientas, pero en su formación también está: <strong>las recetas y los métodos de cocción tienen su historia.</strong></p><p>Ahora, en cada fogón, en cada mano que se aventura, se escribe una historia nueva.</p><blockquote>La tuya, ¿ya la cocinaste hoy?</blockquote>`,
+    refs: ["Patricia Aguirre — Historia Social de la Comida","GAPA — Guías Alimentarias para la Población Argentina","Claude Fischler — El (h)omnívoro"]
+  },
+  puchero: {
+    emoji: "🫕",
+    eyebrow: "Historia + Nutrición · Colaboración",
+    title: "El puchero de los próceres:",
+    titleEm: "poder, guerra y calorías",
+    authors: ["Nutrición: COMENSAL","Historia: Colaboración docente"],
+    body: `<p>Antes de pensar en la soberanía alimentaria como concepto político contemporáneo, hay que volver a los fogones del siglo XIX. El Ejército de los Andes no cruzó la Cordillera con productos ultraprocesados: lo hizo con charqui, locro y maíz.</p><h3>¿Qué comían los soldados?</h3><p>La ración básica incluía <strong>carne seca (charqui), maíz, porotos y grasa</strong>. Alimentos de alto valor calórico, fáciles de transportar y profundamente vinculados a la producción local.</p><blockquote>"La cocina popular argentina nació del mestizaje: ingredientes indígenas, técnicas españolas y la urgencia de los que no tenían otra cosa." — Patricia Aguirre</blockquote><h3>El puchero como síntesis cultural</h3><p>El puchero —esa olla que mezcla lo que hay— es probablemente el plato más honesto de la historia argentina. No tiene receta fija. Es el anti-ultraprocesado por definición: variado, sin aditivos, preparado en comunidad. Desde la <strong>clasificación NOVA</strong>, es Grupo 1 o 2 en su totalidad.</p>`,
+    refs: ["Patricia Aguirre — Historia Social de la Comida","OPS/OMS — Clasificación NOVA","Ley 27.642 — Etiquetado Frontal de Alimentos"]
+  },
+  mazamorra: {
+    emoji: "🌽",
+    eyebrow: "Historia Social de la Cocina",
+    title: "La Mazamorra y",
+    titleEm: "el mestizaje alimentario",
+    authors: ["Historia + Nutrición: COMENSAL"],
+    body: `<p>La mazamorra —maíz blanco hervido con agua y nada más— fue durante siglos el plato de los pobres, de los esclavizados, de los que no tenían otra cosa. Y sin embargo, sobrevivió. Más que sobrevivir: se convirtió en símbolo.</p><h3>Un alimento de resistencia</h3><p>En el Río de la Plata colonial, la mazamorra era el sustento de las clases populares. Indígenas, africanos esclavizados y criollos pobres compartían este alimento básico que la élite miraba con desprecio.</p><blockquote>"Los pobres comían mazamorra. Hoy la llamamos comfort food y la pagamos cara en restaurantes de autor." — Reflexión COMENSAL</blockquote>`,
+    refs: ["GAPA — Guías Alimentarias","OPS/OMS — Clasificación NOVA","Patricia Aguirre — Historia Social de la Comida"]
+  },
+  locro: {
+    emoji: "🍲",
+    eyebrow: "Clasificación NOVA · Plato Político",
+    title: "El Locro del 25:",
+    titleEm: "la olla como acto político",
+    authors: ["Historia + Nutrición: COMENSAL"],
+    body: `<p>Cada 25 de mayo, en plazas y escuelas de todo el país, se sirve locro. Este ritual anual es mucho más que una tradición gastronómica: es una declaración de identidad colectiva cocinada a fuego lento.</p><h3>Los ingredientes del acto político</h3><p>El locro es un plato de origen prehispánico que incorporó elementos europeos. Maíz, porotos, zapallo, carne: cada ingrediente tiene una historia de mestizaje. <strong>No hay receta oficial del locro porque el locro es de todos.</strong></p><blockquote>Cuando se cocina locro en comunidad, se practica soberanía alimentaria sin saberlo.</blockquote><h3>NOVA, sellos y el locro industrial</h3><p>El problema no es el locro: es el locro en tetrapak, con conservantes y sodio elevado. La industria tomó un plato Grupo 1-2 NOVA y lo transformó en Grupo 4. Eso es lo que enseñamos en el Laboratorio de Etiquetas.</p>`,
+    refs: ["OPS/OMS — Clasificación NOVA","Ley 27.642 — Etiquetado Frontal","GAPA — Guías Alimentarias"]
+  },
+  mate: {
+    emoji: "🧉",
+    eyebrow: "Nutrición Crítica · Comensalidad",
+    title: "El mate y",
+    titleEm: "el consumo individual",
+    authors: ["Nutrición + Cultura: COMENSAL"],
+    body: `<p>Hay una imagen que resume perfectamente el problema: alguien en un café, tomando mate en soledad, con auriculares, mirando el teléfono. El mate —símbolo de la comensalidad— convertido en acto de consumo individual.</p><h3>La ronda como protocolo social</h3><p>El mate tradicional implica <strong>confianza, reciprocidad y presencia</strong>. Es el anti-fast food por excelencia.</p><blockquote>"Lo individual no sacia." — frase de nuestra cápsula. El mate lo sabía antes que la nutrición.</blockquote><h3>Más allá de la cafeína</h3><p>La yerba mate contiene cafeína, teobromina y antioxidantes. Pero su verdadero valor no está en el análisis bioquímico: está en el contexto social. Un mate compartido tiene un valor que ningún laboratorio puede medir: el vínculo.</p>`,
+    refs: ["Claude Fischler — El (h)omnívoro","GAPA — Guías Alimentarias","Patricia Aguirre — Historia Social de la Comida"]
+  },
+  milanesa: {
+    emoji: "🥩",
+    eyebrow: "Evolución de la Cocina Argentina",
+    title: "La milanesa:",
+    titleEm: "inmigración y clase obrera",
+    authors: ["Historia + Nutrición: COMENSAL"],
+    body: `<p>La milanesa no es argentina. Llegó con los inmigrantes italianos a fines del siglo XIX. Pero lo que hizo con ella la cocina popular argentina es un fenómeno de apropiación cultural único.</p><h3>De cotoletta a milanesa</h3><p>La <em>cotoletta alla milanese</em> original es de ternera, con hueso. En Argentina se adaptó al corte disponible y barato. La milanesa argentina es más fina, más grande y —en las manos correctas— más sabrosa.</p><blockquote>La milanesa es el plato de la clase trabajadora: rendidora, nutritiva, adaptable. Si la hay, hay comida.</blockquote><h3>El problema de la milanesa industrial</h3><p>Hoy existe la "milanesa de soja" y variantes de <strong>Grupo 4 NOVA</strong> con sellos de advertencia. Esto es exactamente lo que analizamos en el Laboratorio de Etiquetas.</p>`,
+    refs: ["OPS/OMS — Clasificación NOVA","Ley 27.642 — Etiquetado Frontal","GAPA — Guías Alimentarias"]
+  }
+};
+
+function abrirArticulo(id) {
+  const art = articulos[id];
+  if (!art) return;
+  const refsHTML = art.refs.map(r => `<li>${r}</li>`).join('');
+  const authorsHTML = art.authors.map(a => `<span>${a}</span>`).join('');
+  document.getElementById('modal-body').innerHTML = `
+    <span class="art-emoji">${art.emoji}</span>
+    <span class="art-eyebrow">${art.eyebrow}</span>
+    <h2 class="art-title">${art.title}<br><em>${art.titleEm}</em></h2>
+    <div class="art-authors">${authorsHTML}</div>
+    <div class="art-body">${art.body}</div>
+    <div class="art-refs"><h4>Fuentes y respaldo</h4><ul>${refsHTML}</ul></div>
+  `;
+  const modal = document.getElementById('modal-articulo');
+  modal.style.display = 'block';
+  document.body.style.overflow = 'hidden';
+}
+
+function cerrarArticulo() {
+  document.getElementById('modal-articulo').style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') cerrarArticulo(); });
+</script>
+</body>
+</html>
+<script src="assets/js/comensal.js"></script>
