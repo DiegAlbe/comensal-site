@@ -384,3 +384,111 @@ footer { background:var(--negro); border-top:2px solid var(--tomate); color:var(
 @media(max-width:1100px){ .blog-cards{grid-template-columns:1fr;} .blog-card{border-right:none;border-bottom:1px solid rgba(61,32,16,.12);} }
 @media(max-width:700px){ .modal-content{padding:2rem 1.2rem;} }
 
+
+/* SEPARADOR ENTRE ESCRITOS */
+.escritos-separador {
+  width: 100%;
+  max-width: 900px;
+  margin: 4rem auto;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--tomate), transparent);
+  opacity: 0.4;
+}
+
+/* ══════════════════════════════════════════
+   NUEVOS ESTILOS — COMENSAL v2
+   Imágenes, Referencias, Contador, Algoritmo
+   ══════════════════════════════════════════ */
+
+/* ── FOTO BANDA (horno de barro en Oficio) ── */
+.foto-banda { margin-top: 0; }
+.foto-banda-img { position: relative; max-height: 520px; overflow: hidden; }
+.foto-banda-img img { width: 100%; height: 520px; object-fit: cover; object-position: center 30%; display: block; filter: brightness(.85) contrast(1.05); }
+.foto-banda-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 2rem 3rem; background: linear-gradient(transparent, rgba(13,9,5,.88)); }
+.foto-banda-caption .foto-banda-label { font-family: var(--f-mono); font-size: .6rem; letter-spacing: .22em; text-transform: uppercase; color: var(--tomate); display: block; margin-bottom: .5rem; }
+.foto-banda-caption p { font-family: var(--f-body); font-size: 1.1rem; font-style: italic; color: var(--crema); max-width: 520px; }
+
+/* ── FOTO LIBROS (en Recetas) ── */
+.foto-libros { position: relative; margin: 3rem 0; overflow: hidden; max-height: 480px; }
+.foto-libros img { width: 100%; height: 480px; object-fit: cover; object-position: center 40%; display: block; filter: sepia(.12) brightness(.9); }
+.foto-libros-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(13,9,5,.7) 0%, transparent 60%); display: flex; flex-direction: column; justify-content: flex-end; padding: 2.5rem 3rem; }
+.foto-libros-overlay p { font-family: var(--f-display); font-size: clamp(1rem,2.5vw,1.6rem); font-weight: 700; color: var(--crema); letter-spacing: .05em; }
+.foto-libros-overlay span { font-family: var(--f-mono); font-size: .6rem; letter-spacing: .2em; text-transform: uppercase; color: var(--ocre); margin-top: .4rem; display: block; }
+
+/* ── IMAGEN MATE en lista recetas ── */
+.receta-img-inline { display: flex; align-items: center; gap: 1.2rem; padding: .8rem 0; border-bottom: 1px solid rgba(61,32,16,.15); }
+.receta-img-inline img { width: 90px; height: 68px; object-fit: cover; border-radius: 2px; flex-shrink: 0; }
+.receta-img-inline span { font-family: var(--f-body); font-style: italic; font-size: .95rem; color: var(--gris-tinta); }
+
+/* ── FOTO MANIFIESTO (comer político) ── */
+.manifiesto-foto { margin: 2.5rem auto; max-width: 680px; }
+.manifiesto-foto img { width: 100%; height: auto; max-height: 500px; object-fit: cover; border: 3px solid var(--tomate); display: block; filter: brightness(.92) contrast(1.08); }
+
+/* ── SECCIÓN REFERENCIAS ── */
+#referencias { background: var(--crema-suave); padding: 5rem 2.5rem; border-top: 2px solid var(--negro); }
+.referencias-inner { max-width: 1200px; margin: 0 auto; }
+.refs-grid-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5px; background: rgba(61,32,16,.2); margin-top: 2.5rem; }
+.ref-card { background: var(--crema-suave); padding: 2rem 1.8rem; text-decoration: none; color: inherit; display: flex; flex-direction: column; gap: .6rem; transition: background .2s, transform .2s; border-left: 3px solid transparent; }
+.ref-card:hover { background: var(--crema); border-left-color: var(--tomate); transform: translateY(-3px); }
+.ref-card-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: .4rem; }
+.ref-num { font-family: var(--f-mono); font-size: .58rem; letter-spacing: .22em; color: var(--tomate); }
+.ref-arrow { font-size: 1.2rem; color: var(--tomate); transition: transform .2s; }
+.ref-card:hover .ref-arrow { transform: translate(3px,-3px); }
+.ref-name { font-family: var(--f-display); font-size: 1.5rem; font-weight: 800; text-transform: uppercase; color: var(--negro); line-height: 1.1; }
+.ref-desc { font-family: var(--f-body); font-size: .9rem; line-height: 1.65; color: var(--gris-tinta); flex: 1; }
+.ref-url { font-family: var(--f-mono); font-size: .58rem; letter-spacing: .1em; color: var(--ocre); margin-top: .4rem; }
+
+/* ── CONTADOR DE VISITAS ── */
+.visit-counter { display: flex; align-items: center; gap: .6rem; font-family: var(--f-mono); }
+.visit-label { font-size: .55rem; letter-spacing: .18em; text-transform: uppercase; color: rgba(242,232,208,.35); }
+.visit-num { font-size: .8rem; color: var(--tomate); font-weight: 500; letter-spacing: .1em; }
+
+/* ── ARTÍCULO: EL ALGORITMO Y LA RUEDITA ── */
+.algoritmo-article { background: var(--negro); border-top: 2px solid var(--tomate); }
+.algoritmo-header { padding: 4rem 3.5rem 3rem; border-bottom: 2px solid var(--tomate); }
+.algoritmo-header .blog-article-meta { margin-bottom: 1.5rem; }
+.algoritmo-title { font-family: var(--f-display); font-size: clamp(2.2rem,5vw,4.2rem); font-weight: 900; text-transform: uppercase; line-height: .92; color: var(--crema); letter-spacing: -.02em; margin-bottom: 1.8rem; }
+.algoritmo-title em { font-style: italic; color: var(--tomate); }
+.algoritmo-lead { font-family: var(--f-body); font-size: 1.2rem; font-style: italic; line-height: 1.75; color: rgba(242,232,208,.7); max-width: 680px; border-left: 3px solid var(--tomate); padding-left: 1.5rem; }
+.algoritmo-body-grid { display: grid; grid-template-columns: 1.5fr 1fr; border-bottom: 2px solid rgba(242,232,208,.1); }
+.algoritmo-text-col { padding: 3.5rem; border-right: 2px solid rgba(242,232,208,.08); display: flex; flex-direction: column; gap: 1.4rem; }
+.algoritmo-text-col p { font-size: 1.05rem; line-height: 2; color: rgba(242,232,208,.72); }
+.algoritmo-text-col strong { color: var(--crema); font-weight: 600; }
+.algoritmo-quote { font-family: var(--f-body); font-size: 1.35rem; font-style: italic; line-height: 1.5; color: var(--crema); border-left: 4px solid var(--tomate); padding: .4rem 0 .4rem 1.5rem; margin: .5rem 0; }
+.algoritmo-sidebar { padding: 3.5rem; background: var(--carbon); display: flex; flex-direction: column; gap: 2.5rem; }
+.algoritmo-sidebar-card { padding: 2rem; border: 1.5px solid rgba(200,51,10,.3); }
+.algoritmo-sidebar-label { font-family: var(--f-mono); font-size: .6rem; letter-spacing: .22em; text-transform: uppercase; color: var(--tomate); display: block; margin-bottom: 1rem; }
+.algoritmo-sidebar-card p { font-size: .92rem; line-height: 1.8; color: rgba(242,232,208,.6); }
+.algoritmo-preguntas { padding: 2rem; border: 1.5px dashed rgba(200,51,10,.3); }
+.algoritmo-preguntas ul { list-style: none; display: flex; flex-direction: column; gap: 1rem; margin-top: .5rem; }
+.algoritmo-preguntas ul li { font-size: .95rem; line-height: 1.7; color: rgba(242,232,208,.6); padding-left: 1.2rem; position: relative; }
+.algoritmo-preguntas ul li::before { content: "?"; position: absolute; left: 0; color: var(--tomate); font-family: var(--f-display); font-weight: 900; font-size: 1rem; line-height: 1.4; }
+.algoritmo-hamster { display: flex; align-items: center; gap: 1.5rem; padding: 2rem; background: rgba(200,51,10,.08); border: 1px solid rgba(200,51,10,.2); }
+.algoritmo-hamster-icon { font-size: 3.5rem; flex-shrink: 0; }
+.algoritmo-hamster-text { font-family: var(--f-display); font-size: 1.1rem; font-weight: 700; text-transform: uppercase; color: var(--crema); line-height: 1.2; }
+.algoritmo-hamster-text span { color: var(--tomate); display: block; font-size: .85rem; font-weight: 400; font-family: var(--f-mono); letter-spacing: .1em; margin-top: .3rem; }
+.algoritmo-footer { display: grid; grid-template-columns: 1.5fr 1fr; }
+.algoritmo-conclusion { padding: 3rem 3.5rem; border-right: 2px solid rgba(242,232,208,.08); display: flex; align-items: center; }
+.algoritmo-conclusion p { font-family: var(--f-display); font-size: clamp(1.3rem,2.5vw,2rem); font-weight: 700; text-transform: uppercase; line-height: 1.1; color: var(--crema); }
+.algoritmo-cta-box { padding: 3rem; background: var(--tomate); display: flex; flex-direction: column; justify-content: center; }
+.algoritmo-cta-label { font-family: var(--f-display); font-size: 1.4rem; font-weight: 800; text-transform: uppercase; color: var(--crema); margin-bottom: .6rem; line-height: 1.1; }
+.algoritmo-cta-box p { font-size: .92rem; line-height: 1.75; color: rgba(242,232,208,.85); }
+
+/* ── RESPONSIVE NUEVOS ── */
+@media (max-width: 1100px) {
+  .algoritmo-body-grid { grid-template-columns: 1fr; }
+  .algoritmo-text-col { border-right: none; border-bottom: 2px solid rgba(242,232,208,.08); padding: 2.5rem 2rem; }
+  .algoritmo-sidebar { padding: 2.5rem 2rem; }
+  .algoritmo-footer { grid-template-columns: 1fr; }
+  .algoritmo-conclusion { border-right: none; border-bottom: 2px solid rgba(242,232,208,.08); padding: 2.5rem 2rem; }
+  .algoritmo-cta-box { padding: 2.5rem 2rem; }
+  .algoritmo-header { padding: 3rem 2rem; }
+}
+@media (max-width: 768px) {
+  #referencias { padding: 4rem 1.5rem; }
+  .refs-grid-links { grid-template-columns: 1fr; }
+  .foto-banda-img img, .foto-libros img { height: 280px; }
+  .manifiesto-foto img { max-height: 300px; }
+  .receta-img-inline img { width: 70px; height: 52px; }
+  .algoritmo-hamster { flex-direction: column; text-align: center; }
+}

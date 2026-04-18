@@ -8,7 +8,6 @@
 <meta name="keywords" content="Soberanía alimentaria, Etiquetado Frontal Argentina, Comensalidad crítica, Taller de nutrición para escuelas, Ley 27.642">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700;1,900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="assets/css/comensal.css">
 </head>
 <body>
@@ -24,7 +23,8 @@
     <li><a href="#educativa">Educativa</a></li>
     <li><a href="#oficio">Oficio</a></li>
     <li><a href="#recetas">Memoria</a></li>
-    <li><a href="#blog">Blog</a></li>
+    <li><a href="#escritos">Escritos</a></li>
+    <li><a href="#referencias">Referencias</a></li>
     <li><a href="#contacto">Sumarse</a></li>
   </ul>
   <div class="nav-burger" id="navBurger" onclick="toggleNav()">
@@ -213,17 +213,37 @@
       <p class="oficio-next-capsule">Próxima cápsula: Mayo · Mes de la Soberanía</p>
     </div>
   </div>
+
+  <!-- IMAGEN HORNO DE BARRO -->
+  <div class="foto-banda sr">
+    <div class="foto-banda-img">
+      <img src="assets/img/hornobarro.jpeg" alt="Horno de barro — el oficio del fuego" loading="lazy">
+      <div class="foto-banda-caption">
+        <span class="foto-banda-label">El fuego como oficio</span>
+        <p>"Antes de la receta está el fuego. Y antes del fuego, el conocimiento que se aprende mirando."</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- RECETAS -->
 <section id="recetas">
   <div class="recetas-header">
     <div class="sr">
-      <p class="sec-label">Banco de Recetas &amp; Blog</p>
+      <p class="sec-label">Banco de Recetas &amp; Escritos</p>
       <h2 class="sec-title">LA <em>MEMORIA</em><br>EN EL PLATO</h2>
     </div>
     <div class="sr sr-d2">
       <p class="sec-body">Un espacio de colaboración entre la Nutrición y la Historia. Recetas que son documentos. Sabores que son archivos. Lo que casi se pierde, acá se rescata.</p>
+    </div>
+  </div>
+
+  <!-- IMAGEN LIBROS -->
+  <div class="foto-libros sr">
+    <img src="assets/img/libros.jpeg" alt="Biblioteca de soberanía alimentaria — libros sobre la mesa de cocina" loading="lazy">
+    <div class="foto-libros-overlay">
+      <p>"Malcomidos · Devorando el Planeta · Memoria del Fuego"</p>
+      <span>La biblioteca que nutre la memoria</span>
     </div>
   </div>
 
@@ -232,7 +252,7 @@
     <div class="receta-featured sr">
       <div class="receta-featured-visual" style="font-size:6rem;">✍️</div>
       <div class="receta-featured-content">
-        <p class="sec-label">Artículo destacado · El Blog de COMENSAL</p>
+        <p class="sec-label">Artículo destacado · Escritos de COMENSAL</p>
         <h3>La receta que<br>no se escribe</h3>
         <p>Hoy cociné, como todos los días, la receta que heredé. Esa que me da de comer a mí y a mi familia. Nadie nunca la escribió; se fue transmitiendo y hace años llegó a mis manos...</p>
         <a href="#" class="btn btn-dark" onclick="abrirArticulo('receta'); return false;">Leer artículo completo</a>
@@ -276,6 +296,11 @@
           <p>Más que una infusión: un ritual que desafía la lógica del consumo individual.</p>
         </div>
       </div>
+      <!-- IMAGEN MATE -->
+      <div class="receta-img-inline sr sr-d3">
+        <img src="assets/img/matenono.jpeg" alt="Mate al atardecer — comensalidad y territorio" loading="lazy">
+        <span>"Lo individual no sacia."</span>
+      </div>
       <div class="receta-item sr sr-d4" onclick="abrirArticulo('milanesa')" style="cursor:none;">
         <div class="receta-n">05</div>
         <div class="receta-info">
@@ -287,29 +312,9 @@
     </div>
   </div>
 
-  <!-- Blog cards ampliadas -->
-  <div class="blog-cards">
-    <div class="blog-card sr" onclick="abrirArticulo('receta')">
-      <div class="bc-num">—</div>
-      <span class="bc-tag">Reflexión · Memoria culinaria</span>
-      <p class="bc-title">La receta que no se escribe</p>
-      <p class="bc-excerpt">La transmisión oral de la cocina como resistencia cultural. Lo que los libros de recetas no pueden capturar.</p>
-      <span class="bc-leer">Leer →</span>
-    </div>
-    <div class="blog-card sr sr-d1" onclick="abrirArticulo('puchero')">
-      <div class="bc-num">01</div>
-      <span class="bc-tag">Historia + Nutrición</span>
-      <p class="bc-title">El puchero de los próceres</p>
-      <p class="bc-excerpt">Soberanía alimentaria en el siglo XIX. Lo que comían quienes construyeron la nación.</p>
-      <span class="bc-leer">Leer →</span>
-    </div>
-    <div class="blog-card sr sr-d2" onclick="abrirArticulo('mate')">
-      <div class="bc-num">02</div>
-      <span class="bc-tag">Nutrición Crítica</span>
-      <p class="bc-title">El mate y el consumo individual</p>
-      <p class="bc-excerpt">Un análisis de por qué el mate en solitario con auriculares es el síntoma de algo más profundo.</p>
-      <span class="bc-leer">Leer →</span>
-    </div>
+  <div class="edu-cta-row sr" style="margin-top:3rem;">
+    <p>¿Querés leer más? Todos los escritos de COMENSAL están en <em>Escritos</em>.</p>
+    <a href="#escritos" class="btn btn-dark">Ver todos los escritos</a>
   </div>
 
 </section>
@@ -326,24 +331,128 @@
 </div>
 
 
-<!-- BLOG ARTICULO -->
-<section id="blog">
+<!-- ESCRITOS -->
+<section id="escritos">
   <div class="blog-header">
     <div class="sr">
-      <p class="sec-label">Blog · La Memoria</p>
-      <h2 class="sec-title">ARTÍCULOS<br><em>CON HISTORIA</em></h2>
+      <p class="sec-label">Escritos · La Memoria</p>
+      <h2 class="sec-title">ESCRITOS<br><em>CON HISTORIA</em></h2>
     </div>
     <div class="sr sr-d2">
       <p class="sec-body">Escritura colaborativa entre nutrición e historia. Textos que no informan: interpelan.</p>
     </div>
   </div>
 
-  <!-- ARTÍCULO DESTACADO -->
+  <!-- ARTÍCULO 1: La mesa vacía -->
   <article class="blog-article-full sr">
     <div class="blog-article-header">
       <div class="blog-article-meta">
         <span class="blog-cat">Comensalidad · Cultura</span>
-        <span class="blog-date">2025</span>
+        <span class="blog-date">2026</span>
+      </div>
+      <h2 class="blog-article-title">La mesa<br><em>vacía</em></h2>
+      <p class="blog-article-lead">Una madre llega apurada a su casa para preparar un almuerzo. Lo comerán, a medida que cada uno de los integrantes de la familia vaya llegando, sentados solos en la mesa frente a una pantalla. ¿Por qué esta escena nos parece cotidiana y nadie habla de esto?</p>
+    </div>
+
+    <div class="blog-article-body">
+      <div class="blog-text-col">
+        <p>Por eso los invito a analizar la comensalidad. Descubrir qué hay detrás de lo que comemos. No se trata solo de comer bien. Se trata de no comer solos.</p>
+        <p>Podemos preguntarnos no solo qué comemos, sino cómo lo comemos, o tal vez dónde lo comemos, y por qué no, con quién lo comemos. Esto no es matemáticas: dos más dos no nos da cuatro. Cada una de las preguntas que mencioné condiciona el resultado final de la ecuación.</p>
+        <p>Imaginemos una madre pensando en la alimentación de un día hace 20 o 30 años. Comparemos. ¿Qué alimentos por aquellos tiempos no eran habituales en nuestra dieta y hoy están presentes? ¿Y quién decidió eso?</p>
+        <p>La industria alimentaria ha transformado nuestras elecciones. Nos han vuelto consumidores. La comensalidad está perdiendo la batalla, y con ella, nuestra rica cultura alimentaria y la esencia de este hecho social fundacional de lo que hoy conocemos como sociedad.</p>
+        <blockquote class="blog-quote">"Cocinar hizo al hombre, y la comensalidad nos hizo sociales." — Faustino Cordón</blockquote>
+        <p>Los jóvenes, atravesados por la cultura de la imagen, moldean sus cuerpos de manera estandarizada. Comer con otros les resulta complicado, por eso lo evitan. Los jóvenes ya no se juntan a comer.</p>
+        <p>Y nosotros, los adultos, miramos para otro lado. No le damos importancia.</p>
+        <p>Hablemos de comer. De todo lo que eso implica. Porque el qué comemos es lo menos importante. Nuestra cultura alimentaria es extremadamente rica y diversa. Adentrémonos en esas recetas que tienen historia. Busquemos ahí una alimentación sana, segura, soberana y sabrosa.</p>
+      </div>
+      <div class="blog-sidebar-col">
+        <div class="blog-sidebar-card">
+          <p class="blog-sidebar-label">Las preguntas que importan</p>
+          <ul style="padding-left:0;list-style:none;">
+            <li style="margin-bottom:.8rem;">¿Qué comemos?</li>
+            <li style="margin-bottom:.8rem;">¿Cómo lo comemos?</li>
+            <li style="margin-bottom:.8rem;">¿Dónde lo comemos?</li>
+            <li>¿Con quién lo comemos?</li>
+          </ul>
+        </div>
+        <div class="blog-sidebar-preguntas">
+          <p class="blog-sidebar-label">El saber que alimenta</p>
+          <p>Resignifiquemos las manos de nuestras madres y abuelas, llenas de saberes que no están en ningún libro. Esa sabiduría viene de generación en generación. Y todavía alimenta al mundo.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-article-footer">
+      <div class="blog-conclusion">
+        <p>Resignifiquemos las manos de nuestras madres y abuelas, llenas de saberes que no están en ningún libro. Esa sabiduría viene de generación en generación. Y todavía alimenta al mundo.</p>
+      </div>
+      <div class="blog-cta-box">
+        <p class="blog-cta-label">¿Cuándo fue la última vez que comiste con otros?</p>
+        <p>Contanos tu historia. La mesa de COMENSAL es un espacio colaborativo y vivo.</p>
+        <a href="#contacto" class="btn btn-fill" style="margin-top:1rem;display:inline-block;">Escribirnos</a>
+      </div>
+    </div>
+  </article>
+
+  <div class="escritos-separador" aria-hidden="true"></div>
+
+  <!-- ARTÍCULO 2: La primera imagen del día -->
+  <article class="blog-article-full sr">
+    <div class="blog-article-header">
+      <div class="blog-article-meta">
+        <span class="blog-cat">Comensalidad · Pantallas</span>
+        <span class="blog-date">2026</span>
+      </div>
+      <h2 class="blog-article-title">La primera imagen<br><em>del día</em></h2>
+      <p class="blog-article-lead">Despertar y tener el celular en la mesa de luz. Oficia de alarma y es la señal de que la rutina comienza. Manotear el aparato como se pueda. Apagar la alarma.</p>
+    </div>
+
+    <div class="blog-article-body">
+      <div class="blog-text-col">
+        <p>Dormido, entreabrir los ojos y encontrarnos con su pantalla. Ella nos regalará la primera imagen del día, un fondo de pantalla que habremos elegido en algún momento, y que algo nos recordará.</p>
+        <p>En esta tiranía de las pantallas y de las imágenes en la que a diario nos acomodamos, se nos pasa la vida. Las imágenes nos van construyendo una realidad paralela a la que enfrentamos. La mesa vacía y silenciosa, una taza solitaria en la mesa, que tal vez deambule con nosotros por nuestro hábitat.</p>
+        <blockquote class="blog-quote">"¿Por qué nos aislamos al comer? ¿Dónde quedó el compartir la mesa, el juntarnos a comer?"</blockquote>
+        <p>Será que nos incomoda que nos vean comer. Pregunto qué nos pasa. Habla mucho de nosotros. Dice más de lo que queremos decir. Y sí, nos expone. Sentarse a comer con otro nos deja desnudos y nos obliga a aceptar las reglas de un otro que también se muestra y nos invita a conocerlo.</p>
+        <p>Pero hay una salida.</p>
+        <p>Es imprescindible sacar del medio las pantallas, que nos aíslan, y ubicar ahí las mesas para que construyan vínculos que nos hagan pertenecer a un conjunto, a un colectivo, que nos permita vernos y aceptarnos tal cual somos y cómo comemos.</p>
+      </div>
+      <div class="blog-sidebar-col">
+        <div class="blog-sidebar-card">
+          <p class="blog-sidebar-label">La primera imagen del día</p>
+          <p>Lo que elegimos ver primero al despertar dice algo sobre quiénes somos. Lo que elegimos ver mientras comemos, también.</p>
+          <p style="margin-top:1rem;">La mesa no compite con la pantalla. La mesa gana, si la dejamos.</p>
+        </div>
+        <div class="blog-sidebar-preguntas">
+          <p class="blog-sidebar-label">Para pensar</p>
+          <ul>
+            <li>¿Cuál fue la primera imagen que viste hoy?</li>
+            <li>¿Comiste con alguien esta semana?</li>
+            <li>¿Qué pasaría si dejás el celular fuera del comedor?</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-article-footer">
+      <div class="blog-conclusion">
+        <p>Sacar las pantallas del medio y poner las mesas. Esa es la revolución más pequeña y más necesaria que podemos hacer hoy.</p>
+      </div>
+      <div class="blog-cta-box">
+        <p class="blog-cta-label">¿Querés hacer algo distinto con la comensalidad?</p>
+        <p>Contanos. Estamos construyendo este espacio entre todos.</p>
+        <a href="#contacto" class="btn btn-fill" style="margin-top:1rem;display:inline-block;">Sumarse</a>
+      </div>
+    </div>
+  </article>
+
+  <div class="escritos-separador" aria-hidden="true"></div>
+
+  <!-- ARTÍCULO 3: Contra la tiranía del instante -->
+  <article class="blog-article-full sr">
+    <div class="blog-article-header">
+      <div class="blog-article-meta">
+        <span class="blog-cat">Comensalidad · Cultura</span>
+        <span class="blog-date">2026</span>
       </div>
       <h2 class="blog-article-title">Contra la tiranía del "instante":<br><em>rescatar la mesa argentina</em></h2>
       <p class="blog-article-lead">En estos tiempos de redes sociales y de instantes, donde todo es "ya" y nada merece el tiempo necesario, propongo que nos tomemos una pausa y le demos tiempo a lo verdaderamente importante.</p>
@@ -351,28 +460,18 @@
 
     <div class="blog-article-body">
       <div class="blog-text-col">
-
         <p>En estos tiempos de redes sociales y de instantes, donde todo es "ya" y nada merece el tiempo necesario, el silencio y la pausa se perciben como una pérdida de tiempo. La información circula en videos o audios cortos, muchas veces planificados para confundir o para instalar la idea de que esa rapidez es la única verdad.</p>
-
         <p>Propongo que nos tomemos una pausa y le demos tiempo a lo verdaderamente importante. Nuestra generación consume una infinidad de influencers que "cocinan" o inventan recetas en minutos; recetas que esta generación no hará. O, lo que es más preocupante: este contenido llegará a miles de jóvenes con un conflicto con su cuerpo que no encaja en los modelos actuales de belleza. Esto provoca que terminen por no disfrutar la comensalidad, cayendo en los —cada vez más presentes— TCA (Trastornos de la Conducta Alimentaria).</p>
-
-        <blockquote class="blog-quote">
-          "No ha de haber herencia más valiosa que un cuaderno, libreta o papelito escrito a mano con alguna receta."
-        </blockquote>
-
+        <blockquote class="blog-quote">"No ha de haber herencia más valiosa que un cuaderno, libreta o papelito escrito a mano con alguna receta."</blockquote>
         <p>Por eso, reivindico toda la historia que nos construye como comensales. Desde el inicio de nuestra vida, ese hermoso vínculo madre-hijo nos alimenta con nutrientes y con el amor necesario para aprender a vivir. Es fundamental mencionar a esas personas que nos nutren durante la infancia —en el caso de que la infancia sea como debe ser: un espacio para jugar y aprender—.</p>
-
         <p>Podríamos mencionar a madres y abuelas. Y si es una cuestión de género, es porque eran ellas, las mujeres, las encargadas de la preparación de la comida para toda la familia. A mí me gusta reconocerlas como las <strong>"nutricionistas de antaño"</strong>. Por su rol, sus saberes y su incansable labor. Dicha tarea no se estudiaba: se aprendía compartiendo tiempo, mirando las manos y reconociendo los utensilios que se convertirían en aliados al momento de cocinar.</p>
-
       </div>
-
       <div class="blog-sidebar-col">
         <div class="blog-sidebar-card">
           <p class="blog-sidebar-label">Un banco de recetas</p>
           <p>Me gustaría que este espacio actúe como un banco de recetas; de esas que están ancladas a tus sentimientos más profundos, que te transportan a diferentes lugares o que, simplemente, te alegran.</p>
           <p style="margin-top:1rem;">Recetas que te hacen sentir que vas a comer rico, tal como sucedía cuando el plato ya estaba listo sobre la mesa en la que te ibas a sentar.</p>
         </div>
-
         <div class="blog-sidebar-preguntas">
           <p class="blog-sidebar-label">Las preguntas que importan</p>
           <ul>
@@ -395,6 +494,84 @@
       </div>
     </div>
   </article>
+
+  <div class="escritos-separador" aria-hidden="true"></div>
+
+  <!-- ══ ARTÍCULO 4: EL ALGORITMO Y LA RUEDITA ══ -->
+  <article class="algoritmo-article sr">
+    <div class="algoritmo-header blog-article-header">
+      <div class="blog-article-meta">
+        <span class="blog-cat">Tecnología · Comensalidad · Algoritmos</span>
+        <span class="blog-date">2026</span>
+      </div>
+      <h2 class="algoritmo-title">El algoritmo<br><em>y la ruedita</em></h2>
+      <p class="algoritmo-lead">Abrimos el celular, y casi sin pensarlo vamos a esa aplicación que nos muestra videos cortos o imágenes, para informarnos o simplemente pasar un rato. Estamos expuestos. Y el algoritmo nos conoce hasta más que nuestro propio entorno.</p>
+    </div>
+
+    <div class="algoritmo-body-grid">
+      <div class="algoritmo-text-col">
+        <p>Hoy los algoritmos de esas aplicaciones nos conocen hasta más que nuestro propio entorno. <strong>Alimentan de manera constante nuestro ego.</strong> Nos muestran todo lo que queremos ver sin dejarnos lugar para la duda. Y ahí me pregunto: ¿queríamos dudar, o solo afirmar lo que asumimos como verdad?</p>
+
+        <p>Por eso nos parece buena idea compartir un video que muestra nuestra verdad a quien no comparte nuestra manera de ver la realidad. Pensando, lo cagué. Ahora sí va a entender. Pero no es así. Nadie se va a convertir al contrario por un video.</p>
+
+        <blockquote class="algoritmo-quote">"La narrativa de esta época la escriben los algoritmos y sus dueños."</blockquote>
+
+        <p>Por ejemplo, dos canales de YouTube con líneas editoriales muy diferentes —oficialista y anti oficialista— pertenecen al mismo dueño. No les interesa informar ni comunicar. <strong>Solo las vistas y las reproducciones. Monetizar.</strong> Y que se arreglen los usuarios.</p>
+
+        <p>En tiempos donde la narrativa la hacen la inteligencia artificial y las redes sociales, sería interesante preguntarse: ¿quién va a contar nuestras realidades y verdades?</p>
+
+        <p>Para que ese otro que piensa distinto vea nuestro punto de vista y lo conmueva nuestra realidad, un video de TikTok, Instagram o Facebook no sirve.</p>
+
+        <blockquote class="algoritmo-quote">"Entonces, ¿qué sirve?"</blockquote>
+
+        <p>Empecemos a contar a nuestro entorno la rutina. Con sus placeres y sus angustias. A pedir ayuda si es necesario. Que el entorno vea cómo vivo, cómo hago para sobrevivir en este mundo hostil.</p>
+
+        <p><strong>Saquemos afuera lo que nos pasa.</strong> Para que quienes nos quieren lleguen a conocernos más que el algoritmo que nos entretiene, cual hámster en su ruedita.</p>
+      </div>
+
+      <div class="algoritmo-sidebar">
+        <div class="algoritmo-hamster">
+          <div class="algoritmo-hamster-icon">🐹</div>
+          <div class="algoritmo-hamster-text">
+            El hámster en la ruedita
+            <span>El algoritmo nos entretiene.<br>El entorno nos conoce.</span>
+          </div>
+        </div>
+
+        <div class="algoritmo-sidebar-card">
+          <p class="algoritmo-sidebar-label">El espejo del algoritmo</p>
+          <p>Nos muestran todo lo que queremos ver sin dejarnos lugar para la duda. La cámara de eco perfecta: entrás a confirmar lo que ya creés y salís más convencido de lo mismo.</p>
+        </div>
+
+        <div class="algoritmo-preguntas">
+          <p class="algoritmo-sidebar-label">Para preguntarse</p>
+          <ul>
+            <li>¿Querías dudar, o solo afirmar lo que asumís como verdad?</li>
+            <li>¿Quién va a contar nuestras realidades si no lo hacemos nosotros?</li>
+            <li>¿Tu entorno te conoce más que el algoritmo?</li>
+            <li>¿Cuándo fue la última vez que pediste ayuda de verdad?</li>
+          </ul>
+        </div>
+
+        <div class="algoritmo-sidebar-card" style="border-color:rgba(200,51,10,.5);">
+          <p class="algoritmo-sidebar-label">Dos canales, un dueño</p>
+          <p>Dos canales de YouTube con líneas editoriales opuestas —oficialista y anti oficialista— pertenecen al mismo dueño. No les interesa informar. Solo monetizar. Que se arreglen los usuarios.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="algoritmo-footer">
+      <div class="algoritmo-conclusion">
+        <p>Saquemos afuera lo que nos pasa. Para que quienes nos quieren lleguen a conocernos más que el algoritmo que nos entretiene, cual hámster en su ruedita.</p>
+      </div>
+      <div class="algoritmo-cta-box">
+        <p class="algoritmo-cta-label">Contá tu rutina.<br>Con placeres y angustias.</p>
+        <p>El entorno real es el antídoto al algoritmo. La mesa, el encuentro, la palabra dicha en persona.</p>
+        <a href="#contacto" class="btn btn-dark" style="margin-top:1.2rem;display:inline-block;background:var(--negro);color:var(--crema);border-color:var(--negro);">Sumarse al proyecto</a>
+      </div>
+    </div>
+  </article>
+
 </section>
 
 <!-- MANIFIESTO -->
@@ -405,9 +582,64 @@
     <h2 class="manifiesto-h sr sr-d1">LA MESA<br>COMO ACTO<br><em>POLÍTICO</em></h2>
     <p class="manifiesto-p sr sr-d2">Vivimos en una era de abundancia simulada. Las góndolas están llenas de productos que no nutren, diseñados por ingenieros del deseo, vendidos con imágenes de salud y familia. La industria no nos alimenta: nos administra el apetito.</p>
     <blockquote class="manifiesto-cita sr sr-d3">"No hay acto más íntimo y más político que elegir qué ponemos en el cuerpo. Y sin embargo, esa elección nos la hicieron creer libre."</blockquote>
+
+    <!-- IMAGEN COMER POLÍTICO -->
+    <div class="manifiesto-foto sr sr-d4">
+      <img src="assets/img/comerpolitico.jpeg" alt="Consumir casero y local es también un acto político" loading="lazy">
+    </div>
+
     <p class="manifiesto-p sr sr-d4">COMENSAL nace de la síntesis entre la Nutrición Clínica, el Oficio Gastronómico y la Memoria Histórica porque entendemos que el problema alimentario no es médico: es cultural. No se resuelve con más información; se resuelve recuperando el vínculo entre el cuerpo, el territorio y la comunidad.</p>
     <p class="manifiesto-p sr">La nutrición como vínculo social. El oficio como dignidad. La memoria como brújula. Eso es COMENSAL.</p>
     <div style="margin-top:3rem;" class="sr"><a href="#contacto" class="btn btn-tomate-outline">Sumarse al proyecto</a></div>
+  </div>
+</section>
+
+<!-- REDES DE REFERENCIA -->
+<section id="referencias">
+  <div class="referencias-inner">
+    <div class="sr" style="margin-bottom:3rem;">
+      <p class="sec-label">Ecosistema de referencia</p>
+      <h2 class="sec-title">REDES QUE<br><em>ALIMENTAN</em></h2>
+      <p class="sec-body" style="margin-top:1rem;">Organizaciones, plataformas y espacios que comparten la convicción de que la soberanía alimentaria es un derecho, no un privilegio.</p>
+    </div>
+    <div class="refs-grid-links">
+      <a href="https://redcalisas.org" target="_blank" rel="noopener" class="ref-card sr">
+        <div class="ref-card-top">
+          <span class="ref-num">01</span>
+          <span class="ref-arrow">↗</span>
+        </div>
+        <h3 class="ref-name">Red Calisas</h3>
+        <p class="ref-desc">Cátedras Libres de Soberanía Alimentaria. Espacios académicos y comunitarios que construyen conocimiento desde los territorios.</p>
+        <span class="ref-url">redcalisas.org</span>
+      </a>
+      <a href="https://www.fundacionsanar.org.ar/" target="_blank" rel="noopener" class="ref-card sr sr-d1">
+        <div class="ref-card-top">
+          <span class="ref-num">02</span>
+          <span class="ref-arrow">↗</span>
+        </div>
+        <h3 class="ref-name">Fundación Sanar</h3>
+        <p class="ref-desc">Organización comprometida con la salud integral y el bienestar comunitario en Argentina.</p>
+        <span class="ref-url">fundacionsanar.org.ar</span>
+      </a>
+      <a href="https://agenciatierraviva.com.ar/" target="_blank" rel="noopener" class="ref-card sr sr-d2">
+        <div class="ref-card-top">
+          <span class="ref-num">03</span>
+          <span class="ref-arrow">↗</span>
+        </div>
+        <h3 class="ref-name">Agencia Tierra Viva</h3>
+        <p class="ref-desc">Periodismo especializado en agroecología, soberanía alimentaria y ambiente. La información que los medios masivos no muestran.</p>
+        <span class="ref-url">agenciatierraviva.com.ar</span>
+      </a>
+      <a href="https://www.fagran.org.ar/" target="_blank" rel="noopener" class="ref-card sr sr-d3">
+        <div class="ref-card-top">
+          <span class="ref-num">04</span>
+          <span class="ref-arrow">↗</span>
+        </div>
+        <h3 class="ref-name">FAGRAN</h3>
+        <p class="ref-desc">Federación de Agricultores y Ganaderos de la República Argentina. Representación y defensa de los productores del campo nacional.</p>
+        <span class="ref-url">fagran.org.ar</span>
+      </a>
+    </div>
   </div>
 </section>
 
@@ -419,9 +651,9 @@
       <h2 class="sec-title">TRABAJEMOS<br><em>JUNTOS</em></h2>
       <p class="sec-body">Si sos docente, directivo, coordinador pedagógico o simplemente alguien que quiere hacer algo distinto con la alimentación en tu comunidad: estamos. Respondemos en menos de 48 horas.</p>
       <div class="contacto-datos">
-        <div class="dato"><div class="dato-icono">✉</div><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e28a8d8e83a2818d8f878c91838ecc8390">[email&#160;protected]</a></div>
+        <div class="dato"><div class="dato-icono">✉</div><a href="mailto:comensal@mail.com">comensal@mail.com</a></div>
         <div class="dato"><div class="dato-icono">📍</div>Argentina · Todo el país</div>
-        <div class="dato"><div class="dato-icono">📲</div>@comensal.ar</div>
+        <div class="dato"><div class="dato-icono">📲</div>Diegoalbeira@hotmail.com.ar</div>
       </div>
     </div>
     <div class="contacto-form-col sr sr-d2">
@@ -465,6 +697,8 @@
         <li><a href="#educativa">Área Educativa</a></li>
         <li><a href="#oficio">Oficio &amp; Shop</a></li>
         <li><a href="#recetas">Banco de Recetas</a></li>
+        <li><a href="#escritos">Escritos</a></li>
+        <li><a href="#referencias">Referencias</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </div>
@@ -478,13 +712,12 @@
       </ul>
     </div>
     <div class="f-col">
-      <h5>Temas / SEO</h5>
+      <h5>Referencias</h5>
       <ul>
-        <li><a href="#manifiesto">Soberanía alimentaria</a></li>
-        <li><a href="#educativa">Etiquetado Frontal</a></li>
-        <li><a href="#recetas">Comensalidad crítica</a></li>
-        <li><a href="#educativa">Taller nutrición escuelas</a></li>
-        <li><a href="#manifiesto">Ley 27.642</a></li>
+        <li><a href="https://redcalisas.org" target="_blank">Red Calisas</a></li>
+        <li><a href="https://www.fundacionsanar.org.ar/" target="_blank">Fundación Sanar</a></li>
+        <li><a href="https://agenciatierraviva.com.ar/" target="_blank">Tierra Viva</a></li>
+        <li><a href="https://www.fagran.org.ar/" target="_blank">FAGRAN</a></li>
       </ul>
     </div>
   </div>
@@ -499,8 +732,12 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2025 COMENSAL. Todos los derechos reservados.</span>
-    <span>Nutrición · Oficio · Memoria</span>
+    <span>© 2026 COMENSAL. Todos los derechos reservados.</span>
+    <div class="visit-counter">
+      <span class="visit-label">Visitas</span>
+      <span class="visit-num" id="visitNum">—</span>
+    </div>
+    <span>Diego · Comensal · 2026</span>
   </div>
 </footer>
 
@@ -548,11 +785,24 @@ document.querySelectorAll('.hero-h1,.hero-slogan,.hero-manifiesto,.hero-ctas,.st
   setTimeout(()=>{ el.style.transition='opacity .8s ease,transform .8s ease'; el.style.opacity='1'; el.style.transform='none'; },180+i*110);
 });
 
+/* Contador de visitas */
+(function(){
+  try {
+    const key = 'comensal_visits';
+    let v = parseInt(localStorage.getItem(key) || '0') + 1;
+    localStorage.setItem(key, v);
+    fetch('https://api.countapi.xyz/hit/comensal-sitio/visitas')
+      .then(r => r.json())
+      .then(d => { document.getElementById('visitNum').textContent = d.value.toLocaleString('es-AR'); })
+      .catch(() => { document.getElementById('visitNum').textContent = v.toLocaleString('es-AR'); });
+  } catch(e) {}
+})();
+
 /* ══ ARTÍCULOS ══ */
 const articulos = {
   receta: {
     emoji: "✍️",
-    eyebrow: "Blog COMENSAL · Reflexión",
+    eyebrow: "Escritos COMENSAL · Reflexión",
     title: "La receta que",
     titleEm: "no se escribe",
     authors: ["Por: COMENSAL", "Categoría: Memoria culinaria"],
@@ -633,4 +883,3 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') cerrarArticu
 </script>
 </body>
 </html>
-<script src="assets/js/comensal.js"></script>
