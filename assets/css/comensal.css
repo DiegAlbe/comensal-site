@@ -196,7 +196,8 @@ form { display:flex; flex-direction:column; gap:1.2rem; }
 .f-row { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
 .f-group { display:flex; flex-direction:column; gap:.4rem; }
 .f-group label { font-family:var(--f-mono); font-size:.6rem; letter-spacing:.2em; text-transform:uppercase; color:var(--gris-tinta); }
-.f-group input, .f-group select, .f-group textarea { font-family:var(--f-body); font-size:.95rem; padding:.85rem 1rem; background:var(--crema-suave); border:1.5px solid rgba(61,32,16,.2); color:var(--negro); outline:none; transition:border-color .2s,background .2s; -webkit-appearance:none; resize:none; }
+.f-group input, .f-group select, .f-group textarea { font-family:var(--f-body); font-size:.95rem; padding:.85rem 1rem; background:var(--crema-suave); border:1.5px solid rgba(61,32,16,.2); color:var(--negro); outline:none; transition:border-color .2s,background .2s; -webkit-appearance:none;-moz-appearance: none;
+  appearance: none; resize:none; }
 .f-group input:focus, .f-group select:focus, .f-group textarea:focus { border-color:var(--tomate); background:#fff; }
 .form-msg { display:none; font-family:var(--f-mono); font-size:.72rem; letter-spacing:.12em; color:var(--tomate); margin-top:.5rem; }
 
